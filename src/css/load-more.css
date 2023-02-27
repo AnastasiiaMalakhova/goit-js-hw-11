@@ -1,0 +1,29 @@
+.load-more {
+  font-family: inherit;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  text-transform: uppercase;
+  border-radius: 5px;
+  padding: 10px;
+  background: rgb(65, 105, 225);
+  color: #fff;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none;
+  cursor: pointer;
+}
+.is-hidden {
+  opacity: 0;
+  visibility: visible;
+  pointer-events: none;
+}
+
+.load-more:disabled {
+  background-color: #c1c1c1;
+  cursor: not-allowed;
+}
+
+.load-more:hover {
+  background: rgb(74, 119, 255);
+}

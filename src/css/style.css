@@ -1,0 +1,30 @@
+@import url(./input.css);
+@import url(./load-more.css);
+@import url(./gallery.css);
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  font-family: 'Shantell Sans', cursive;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  color: #212121;
+  line-height: 1.5;
+  height: 100vh;
+  background-color: rgb(234, 233, 245);
+}
+
+.search-form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: fixed;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  background-color: rgb(65, 105, 225);
+  box-shadow: 3px 3px 3px 0px rgb(87, 88, 94, 0.5);
+}
