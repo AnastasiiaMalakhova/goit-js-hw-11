@@ -27,7 +27,7 @@ async function onSearch(e) {
   resetPage();
 
   searchQuery = e.currentTarget.searchQuery.value.trim();
-  console.log(searchQuery);
+
   if (searchQuery === '') {
     return Notify.failure(`Please enter the text request`);
   }
