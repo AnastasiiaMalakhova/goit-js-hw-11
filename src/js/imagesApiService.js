@@ -7,7 +7,7 @@ export default async function imagesApiService(searchQuery, page) {
     const URL = `${BASE_URL}?key=${KEY}&q=${searchQuery}&image_type=photo&orientation=horizontal&safesearch=true&per_page=40&page=${page}`;
     const response = await axios.get(URL);
     const data = await response.data;
-    console.log(data.hits);
+
     return data;
   } catch (error) {
     console.error(error);
