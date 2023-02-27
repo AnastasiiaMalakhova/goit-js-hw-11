@@ -39,7 +39,7 @@ async function onSearch(e) {
       Notify.warning(
         `Sorry, there are no images matching your search query. Please try again.`
       ),
-      loadMoreBtn.classList.add('is-hidden')
+      loadMore.classList.add('is-hidden')
     );
   } else {
     renderImagesCards(hits);
@@ -64,9 +64,7 @@ async function onLoadMoreBtn() {
   const page = Number.parseFloat(response.totalHits / 40);
   if (currentPage >= page) {
     loadMore.classList.add('is-hidden');
-    Notify.failure(
-      `We're sorry, but you've reached the end of search results.`
-    );
+    Notify.info(`We're sorry, but you've reached the end of search results.`);
   }
 }
 
